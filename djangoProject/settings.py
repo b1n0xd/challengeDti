@@ -37,8 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms', #novo
     'tarefas.apps.TarefasConfig',
 ]
+
+# django-crispy-forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4' #novo
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
