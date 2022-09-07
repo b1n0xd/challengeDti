@@ -15,9 +15,14 @@ def tarefas_pendentes_list(request):
                   {'tarefas_pendentes':tarefas_pendentes,
                    'form':form})
 
-# novo
 def concluir_tarefa(request, tarefa_id):
     tarefa = get_object_or_404(Tarefa, id=tarefa_id)
     tarefa.status = 'concluído'
     tarefa.save()
+    return redirect('tarefas_pendentes_list')
+
+# novo
+def excluir_tarefa(request, tarefa_id):
+    tarefa = get_object_or_404(Tarefa, id=tarefa_id)
+    tarefa.delete()
     return redirect('tarefas_pendentes_list')
