@@ -26,7 +26,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de `Python 3.10 / Django `
+* Você instalou a versão mais recente de `Python 3.8 / Django `
 * Você tem uma máquina `Windows / Linux / Mac`.
 * Guia de instalacao do Python `Guia / https://www.python.org/downloads/`.
 * Guia de instalacao do Django `Guia / https://docs.djangoproject.com/en/4.1/topics/install/`.
