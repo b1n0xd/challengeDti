@@ -5,6 +5,7 @@
     <title></title>
   </head>
   <body>
+
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
@@ -47,7 +48,8 @@
               </div>
               <div class="modal-body">
                 <p>
-                  <a class="btn btn-success" href="{% url 'concluir_tarefa' tarefa.id %}">Concluir</a> # novo
+                  <a class="btn btn-success" href="{% url 'concluir_tarefa' tarefa.id %}">Concluir</a>
+                  <a class="btn btn-danger" href="{% url 'excluir_tarefa' tarefa.id %}">Excluir</a> # novo
                 </p>
               </div>
             </div>

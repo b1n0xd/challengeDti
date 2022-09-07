@@ -1,3 +1,4 @@
+
 from django.shortcuts import render, redirect, get_object_or_404 # novo
 from .models import Tarefa
 from .forms import AdicionarTarefa
@@ -21,8 +22,14 @@ def concluir_tarefa(request, tarefa_id):
     tarefa.save()
     return redirect('tarefas_pendentes_list')
 
-# novo
 def excluir_tarefa(request, tarefa_id):
     tarefa = get_object_or_404(Tarefa, id=tarefa_id)
     tarefa.delete()
+    return redirect('tarefas_pendentes_list')
+
+
+def adiar_tarefa(request, tarefa_id):
+    tarefa = get_object_or_404(Tarefa, id=tarefa_id)
+    tarefa.status = 'adiado'
+    tarefa.save()
     return redirect('tarefas_pendentes_list')
