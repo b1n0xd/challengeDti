@@ -66,6 +66,14 @@ Iniciar o servidor  (Ao iniciar o servidor retorna a URL de acesso)
 ```
     Exemplo:  http://127.0.0.1:8000/tarefas/
 ```
+
+ Kanban referente ao projeto:
+```
+    https://github.com/users/lucvieirasi/projects/6
+```
 <img src="readmeassets/tela3.png" alt="Tela Principal">
+
+
+
 
 [⬆ Voltar ao topo](#nome-do-projeto)<br>
